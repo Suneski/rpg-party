@@ -1,8 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import Select from './Select.js'
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Select />
+        <Select />
+        <Select />
+        <Select />
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
